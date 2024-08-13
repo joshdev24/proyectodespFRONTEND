@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import data from "../../../data.js";
 import Contact from "../Contact/Contact.jsx";
 const ContactList = ( ) => {
-  const categoriasDisponibles = ['no', 'Pubertad'];
-  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('no');
+  const categoriasDisponibles = ['TODAS', 'PUBERTAD'];
+  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('TODAS');
   const [emocionesState, setEmocionesState] = useState(data);
 
   const handleChangeCategoria = (nuevoValor) => {

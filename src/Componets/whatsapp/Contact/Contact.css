@@ -52,6 +52,7 @@
     outline-offset: 15px;
     text-shadow: 1px 1px 2px #427388;
 }
+
 .contact-container:before,
 .contact-container:after {
     content: '';
@@ -92,44 +93,7 @@
 
 }
 
-button {
-    background: #c7d5cf;
-    border: none;
-    position: relative;
-    cursor: pointer;
-    transition: 800ms ease all;
-    outline: none;
-    font-size: medium;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-button:hover {
-    background: #ffffff;
-    color: #cecece;
-}
-
- button:before,
- button:after {
-    content: '';
-    position: absolute;
-    background: #ffffff;
-    transition: 400ms ease all;
-}
-
-button:after {
-    right: inherit;
-    top: inherit;
-    left: 0;
-    bottom: 0;
-}
-
- button:hover:before,
- button:hover:after {
-    width: 100%;
-    transition: 800ms ease all;
-}
-
-.btn{
+.btn {
     border: 0 solid;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
     outline: 1px solid;
@@ -149,24 +113,51 @@ button:after {
 }
 
 
+.btn {
+    border: 1px solid #995309;
+    border-radius: 4px;
+    background-color: #d9750b;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset,
+        0 1px 3px rgba(0, 0, 0, .2);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f90), to(#e76a00));
+    background-image: linear-gradient(rgb(255, 51, 0) 10%, #e76a00 100%);
+}
+
+.btn:hover,
+.btn-3d:focus {
+    background-color: #e0811b;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f0a100), to(#f70));
+    background-image: linear-gradient(#f0a100 10%, rgb(255, 0, 0) 100%);
+}
+
+.btn:active {
+    background-color: #cf6a00;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2) inset;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f0a100), to(#f70));
+    background-image: linear-gradient(#f0a100 10%, #f70 100%);
+
+}
+
 .contact-container2 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
 }
 
 
-.imageContainer {
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .imageContainer {
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.profile-picture {
-    width: 100%;
-}
+    .profile-picture {
+        width: 100%;
+    }

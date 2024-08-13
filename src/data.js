@@ -6,7 +6,7 @@ const data = [
 		backgroundColor: "#FF7777",
 		status: "Viva la pizza con anana y queso",
 		color: "#FFAAAA",
-		categoria: "no",
+		categoria: "TODAS",
 		chatHistory: [
 			{
 				author: 'Yo',
@@ -66,7 +66,7 @@ const data = [
 		backgroundColor: "#f0d78a",
 		status: "¡Hoy es un gran día para sonreír y ser feliz! 😊🌟",
 		color: "#e7e8b4",
-		categoria: "no",
+		categoria: "TODAS",
 		chatHistory: [
 			{
 				author: 'Yo',
@@ -126,7 +126,7 @@ const data = [
 		backgroundColor: "#6482AD",
 		status: "A veces, las nubes en el cielo también tienen su lugar. 🌧️",
 		color: "#5e729d",
-		categoria: "no",
+		categoria: "TODAS",
 		chatHistory: [
 			{
 				author: 'Tristeza',
@@ -179,7 +179,7 @@ const data = [
 		backgroundColor: "#C40C0C",
 		status: "Estoy tan enojado que hasta mi café está temblando. 😱",
 		color: "#BB6464",
-		categoria: "no",
+		categoria: "TODAS",
 		chatHistory: [
 			{
 				author: 'Furia',
@@ -225,7 +225,7 @@ const data = [
 		backgroundColor: "#987D9A",
 		status: "Si ves a alguien huyendo sin motivo, soy yo. 🏃‍♂️😅",
 		color: "#b69cc3",
-		categoria: "no",
+		categoria: "TODAS",
 		chatHistory: [
 			{
 				author: 'Temor',
@@ -278,7 +278,7 @@ const data = [
 		backgroundColor: "#6C946F",
 		status: "Mi cara cuando alguien menciona pizza con anana: 😒🍕",
 		color: "#d5f1c6",
-		categoria: "no",
+		categoria:"TODAS",
 		chatHistory: [
 			{
 				author: 'Desagrado',
@@ -338,7 +338,7 @@ const data = [
 				backgroundColor: "#FF8343",
 				status: "",
 				color: "#FFEEAD",
-				categoria: "Pubertad", 
+				categoria: "PUBERTAD", 
 				chatHistory: [
 					{
 						author: 'Ansiedad',
@@ -398,7 +398,7 @@ const data = [
 				backgroundColor: "#F0A8D0",
 				status: "",
 				color: "#EECAD5",
-				categoria: "Pubertad",
+				categoria: "PUBERTAD",
 				chatHistory: [
 					{
 						author: 'Verguenza',
@@ -458,7 +458,7 @@ const data = [
 				backgroundColor: "#36C2CE",
 				status: "",
 				color: "#91DDCF",
-				categoria: "Pubertad",
+				categoria: "PUBERTAD",
 				chatHistory: [
 					{
 						author: 'Envidia',
@@ -518,7 +518,7 @@ const data = [
 				backgroundColor: "#577B8D",
 				status: "",
 				color: "#508C9B",
-				categoria: "Pubertad",
+				categoria: "PUBERTAD",
 				chatHistory: [
 					{
 						author: 'Aburrimiento',
