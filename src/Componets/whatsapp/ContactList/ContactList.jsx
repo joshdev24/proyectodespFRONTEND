@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import data from "../../../data.js";
 import Contact from "../Contact/Contact.jsx";
+import './ContactList.css';
 const ContactList = ( ) => {
   const categoriasDisponibles = ['TODAS', 'PUBERTAD'];
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('TODAS');
