@@ -336,55 +336,62 @@ const data = [
 				name: "Ansiedad",
 				profilePicture: "ansiedad.jpg",
 				backgroundColor: "#FF8343",
-				status: "",
+				status: "Si alguien encuentra mi paz interior, por favor, devuélvanla. Estaba aquí hace un minuto.",
 				color: "#FFEEAD",
 				categoria: "PUBERTAD", 
 				chatHistory: [
 					{
-						author: 'Ansiedad',
-						content: 'No estoy muy seguro sobre tu outfit para la fiesta.',
+						author: 'Yo',
+						content: 'Estoy tan estresado que mi vida es un capítulo de una telenovela dramática.',
 						date: 'sabado a 14:00',
 						state: 'visto',
 						id: 1
 					},
 					{
-						author: 'Yo',
-						content: 'Porque?',
+						author: 'Ansiedad',
+						content: '¿En qué episodio estás? ¿El de “Mi jefe odia a los gatos” o “La nevera se ha convertido en un agujero negro”?',
 						date: 'sabado a 14:01',
 						state: 'visto',
 						id: 2
 					},
 					{
-						author: 'Ansiedad',
-						content: 'Bueno, el color y el estilo parecen un poco fuera de lugar para la ocasión.',
+						author: 'Yo',
+						content: 'Definitivamente el de “Los problemas vienen en camiones”',
 						date: 'sabado a 14:02',
 						state: 'visto',
 						id: 3
 					},
 					{
-						author: 'Yo',
-						content: '¿Que puedo cambiar?',
+						author: 'Ansiedad',
+						content: '¡Genial! Solo me falta hacer una entrada dramática, ¿Quieres un poco de confeti virtual?',
 						date: 'sabado a 14:03',
 						state: 'visto',
 						id: 4
 					},
 					{
-						author: 'Ansiedad',
-						content: 'Capaz un color mas neutral y un estilo mas casual.',
+						author: 'Yo',
+						content: '¡Sí, por favor! Aunque, no estoy seguro si eso ayudará con mi estrés o solo aumentará el desorden.',
 						date: 'sabado a 14:05',
 						state: 'visto',
 						id: 5
 					},
 					{
+						author: 'Ansiedad',
+						content: 'Si el confeti virtual no sirve, siempre puedo ofrecerte un karaoke para desahogarte.',
+						date: 'sabado a 14:05',
+						state: 'visto',
+						id: 6
+					},
+					{
 						author: 'Yo',
-						content: 'Dale, ahora lo cambio, gracias.',
+						content: '¡Perfecto! Solo si prometes no grabarlo para la eternidad.',
 						date: 'sabado a 14:05',
 						state: 'visto',
 						id: 6
 					},
 					{
 						author: 'Ansiedad',
-						content: 'Denada, si hay pizza con Anana, NO LA COMAS!!',
+						content: '¡Prometido!',
 						date: 'sabado a 14:05',
 						state: 'visto',
 						id: 6
@@ -396,55 +403,55 @@ const data = [
 				name: "Verguenza",
 				profilePicture: "verguenza.jpg",
 				backgroundColor: "#F0A8D0",
-				status: "",
+				status: "Mis momentos vergonzosos son tan épicos que deberían tener su propio canal de televisión. 📺😆",
 				color: "#EECAD5",
 				categoria: "PUBERTAD",
 				chatHistory: [
 					{
 						author: 'Verguenza',
-						content: 'No estoy muy seguro sobre tu outfit para la fiesta.',
+						content: '¡Hola! Soy tu vergüenza, y he venido a recordarte ese momento en el que bailaste en público como si nadie te estuviera viendo. 💃😳',
 						date: 'sabado a 14:00',
 						state: 'visto',
 						id: 1
 					},
 					{
 						author: 'Yo',
-						content: 'Porque?',
+						content: '¡Eso fue hace años! ¿Por qué tienes que sacar el tema ahora?',
 						date: 'sabado a 14:01',
 						state: 'visto',
 						id: 2
 					},
 					{
 						author: 'Verguenza',
-						content: 'Bueno, el color y el estilo parecen un poco fuera de lugar para la ocasión.',
+						content: ' Porque es mi trabajo ser la reina de los recuerdos incómodos. ¡Y hoy estoy en modo “flashback”!',
 						date: 'sabado a 14:02',
 						state: 'visto',
 						id: 3
 					},
 					{
 						author: 'Yo',
-						content: '¿Que puedo cambiar?',
+						content: 'Estoy tratando de mantener mi dignidad intacta.',
 						date: 'sabado a 14:03',
 						state: 'visto',
 						id: 4
 					},
 					{
 						author: 'Verguenza',
-						content: 'Capaz un color mas neutral y un estilo mas casual.',
+						content: '¿Dignidad? ¡Eso es tan pasado de moda!',
 						date: 'sabado a 14:05',
 						state: 'visto',
 						id: 5
 					},
 					{
 						author: 'Yo',
-						content: 'Dale, ahora lo cambio, gracias.',
+						content: 'Dale, ya entendí! Pero al menos no te presentes en mi próxima videollamada, ¿de acuerdo?',
 						date: 'sabado a 14:05',
 						state: 'visto',
 						id: 6
 					},
 					{
 						author: 'Verguenza',
-						content: 'Denada, si hay pizza con Anana, NO LA COMAS!!',
+						content: 'No prometo nada! ',
 						date: 'sabado a 14:05',
 						state: 'visto',
 						id: 6
@@ -456,59 +463,52 @@ const data = [
 				name: "Envidia",
 				profilePicture: "envidia.jpg",
 				backgroundColor: "#36C2CE",
-				status: "",
+				status: "Mi envidia tiene envidia de mi paciencia 😜",
 				color: "#91DDCF",
 				categoria: "PUBERTAD",
 				chatHistory: [
 					{
-						author: 'Envidia',
-						content: 'No estoy muy seguro sobre tu outfit para la fiesta.',
+						author: 'Yo',
+						content: '¡Estoy celoso del nuevo coche de mi amigo!',
 						date: 'sabado a 14:00',
 						state: 'visto',
 						id: 1
 					},
 					{
-						author: 'Yo',
-						content: 'Porque?',
+						author: 'Envidia',
+						content: ' ¡Hola! Soy la envidia, encantada de hacerte sentir como si tu coche fuera un carrito de supermercado.',
 						date: 'sabado a 14:01',
 						state: 'visto',
 						id: 2
 					},
 					{
-						author: 'Envidia',
-						content: 'Bueno, el color y el estilo parecen un poco fuera de lugar para la ocasión.',
+						author: 'Yo',
+						content: '¡No es justo! ¿Qué hago para no sentirme así?',
 						date: 'sabado a 14:02',
 						state: 'visto',
 						id: 3
 					},
 					{
-						author: 'Yo',
-						content: '¿Que puedo cambiar?',
+						author: 'Envidia',
+						content: '¿Qué tal si le pones unas ruedas nuevas y lo llamas "edición limitada"? ',
 						date: 'sabado a 14:03',
 						state: 'visto',
 						id: 4
 					},
 					{
-						author: 'Envidia',
-						content: 'Capaz un color mas neutral y un estilo mas casual.',
+						author: 'Yo',
+						content: '¡Buena idea! Lo llamaré "Classic Deluxe". ¡Gracias, Envidia!',
 						date: 'sabado a 14:05',
 						state: 'visto',
 						id: 5
 					},
 					{
-						author: 'Yo',
-						content: 'Dale, ahora lo cambio, gracias.',
+						author: 'Envidia',
+						content: 'Seguiré esperando mi próximo gran drama',
 						date: 'sabado a 14:05',
 						state: 'visto',
 						id: 6
 					},
-					{
-						author: 'Envidia',
-						content: 'Denada, si hay pizza con Anana, NO LA COMAS!!',
-						date: 'sabado a 14:05',
-						state: 'visto',
-						id: 6
-					}
 				]
 			},
 			{
@@ -516,55 +516,55 @@ const data = [
 				name: "Aburrimiento",
 				profilePicture: "aburrimiento.jpg",
 				backgroundColor: "#577B8D",
-				status: "",
+				status: "Mi aburrimiento está en modo ‘superhéroe’. ¡Mi superpoder es convertir cualquier actividad en una siesta!",
 				color: "#508C9B",
 				categoria: "PUBERTAD",
 				chatHistory: [
 					{
 						author: 'Aburrimiento',
-						content: 'No estoy muy seguro sobre tu outfit para la fiesta.',
+						content: '¿Preparado para una fiesta de sofá?',
 						date: 'sabado a 14:00',
 						state: 'visto',
 						id: 1
 					},
 					{
 						author: 'Yo',
-						content: 'Porque?',
+						content: '¡Oh, genial! ¿Qué plan tienes para hoy, aparte de hacerme sentir como un cactus en una sala de espera?',
 						date: 'sabado a 14:01',
 						state: 'visto',
 						id: 2
 					},
 					{
 						author: 'Aburrimiento',
-						content: 'Bueno, el color y el estilo parecen un poco fuera de lugar para la ocasión.',
+						content: 'Pensaba en un maratón de mirar cómo el reloj avanza lentamente. ¡Es un deporte extremo!',
 						date: 'sabado a 14:02',
 						state: 'visto',
 						id: 3
 					},
 					{
 						author: 'Yo',
-						content: '¿Que puedo cambiar?',
+						content: '¿Dónde firmo para escapar de esta fiesta?',
 						date: 'sabado a 14:03',
 						state: 'visto',
 						id: 4
 					},
 					{
 						author: 'Aburrimiento',
-						content: 'Capaz un color mas neutral y un estilo mas casual.',
+						content: 'Tranquilo, puedes contar las telarañas en las esquinas. ¡Es una búsqueda del tesoro!',
 						date: 'sabado a 14:05',
 						state: 'visto',
 						id: 5
 					},
 					{
 						author: 'Yo',
-						content: 'Dale, ahora lo cambio, gracias.',
+						content: '¡Genial! ¡Voy a buscar algo más divertido, como ver crecer la hierba!',
 						date: 'sabado a 14:05',
 						state: 'visto',
 						id: 6
 					},
 					{
 						author: 'Aburrimiento',
-						content: 'Denada, si hay pizza con Anana, NO LA COMAS!!',
+						content: 'Me quedaré aquí en modo "inactividad máxima"',
 						date: 'sabado a 14:05',
 						state: 'visto',
 						id: 6

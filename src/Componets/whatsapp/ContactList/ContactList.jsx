@@ -39,12 +39,11 @@ const ContactList = ( ) => {
         {emocionesState.map(contact => (
           <Contact contact={contact} key={contact.id} />
         ))}
-      </div>
-
-      <div className="btm-cont">
+        <div className="btm-cont">
         <i className="bi bi-telephone"></i>
         <i className="bi bi-chat-fill"></i>
         <i className="bi bi-gear-wide-connected"></i>
+      </div>
       </div>
     </div>
   );

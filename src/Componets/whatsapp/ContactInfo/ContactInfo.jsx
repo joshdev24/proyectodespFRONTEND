@@ -28,9 +28,14 @@ const ContactInfo = () => {
           <span><i> {contactData.status} </i></span>
         </div>
         <div className="bottom-icon" style={{ backgroundColor: contactData.backgroundColor }} >
-          <button style={{ backgroundColor: contactData.color }}><i class="bi bi-star">    Mensajes Destacados </i></button>
-          <button style={{ backgroundColor: contactData.color }}><i class="bi bi-bell">               Silenciar Notificaciones</i></button>
-          <button style={{ backgroundColor: contactData.color }}><i class="bi bi-clock-history"></i>  Mensajes temporales</button>
+          <button style={{ backgroundColor: contactData.color }}><i class="bi bi-star">   <span> Mensajes Destacados </span>  </i></button>
+          <button style={{ backgroundColor: contactData.color }}><i class="bi bi-bell">          <span> Silenciar Notificaciones</span>     </i></button>
+          <button style={{ backgroundColor: contactData.color }}><i class="bi bi-clock-history"></i> <span> Mensajes temporales</span> </button>
+
+        </div>
+        <div className="options" > 
+          <button style={{ backgroundColor: contactData.backgroundColor }} > <i class="bi bi-ban"></i> <span> Bloquear Contacto</span></button>
+        <button style={{ backgroundColor: contactData.backgroundColor }}> <i class="bi bi-recycle"></i> <span>Vaciar Chat </span></button>
         </div>
       </div>
     </div>

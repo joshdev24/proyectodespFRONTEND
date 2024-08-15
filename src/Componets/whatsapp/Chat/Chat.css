@@ -47,6 +47,7 @@ body {
 .received {
     display: flex;
     justify-content: flex-start;
+    padding: 15px;
 
 }
 
@@ -92,7 +93,7 @@ body {
 }
 
 .input {
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
     border: 0px;
     padding: 9px;
@@ -122,3 +123,4 @@ button {
     margin-right: 10px;
     align-content: center;
 }
+
