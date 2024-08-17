@@ -172,7 +172,7 @@ const data = [
 			},
 			{
 				author: 'Tristeza',
-				content: 'Era una tarde nubala de 1967',
+				content: 'Era una tarde nubada de 1967',
 				date: 'hoy a 10:06',
 				state: 'visto',
 				id: 7
