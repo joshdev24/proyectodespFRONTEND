@@ -21,6 +21,8 @@ const ContactList = ( ) => {
 
   return (
     <div className="contact-list-container">
+      
+
       <div className="header">
         <span>WhatsApp</span>
         {categoriasDisponibles.map(categoria => (
@@ -39,12 +41,16 @@ const ContactList = ( ) => {
         {emocionesState.map(contact => (
           <Contact contact={contact} key={contact.id} />
         ))}
-        <div className="btm-cont">
+        
+      </div>
+
+      <div className="btm-cont">
         <i className="bi bi-telephone"></i>
         <i className="bi bi-chat-fill"></i>
         <i className="bi bi-gear-wide-connected"></i>
       </div>
-      </div>
+
+
     </div>
   );
 };
