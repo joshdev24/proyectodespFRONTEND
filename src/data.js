@@ -167,8 +167,15 @@ const data = [
 				author: 'Yo',
 				content: 'Perfecto',
 				date: 'hoy a 10:05',
-				state: 'entregado',
+				state: 'visto',
 				id: 6
+			},
+			{
+				author: 'Tristeza',
+				content: 'Era una tarde nubala de 1967',
+				date: 'hoy a 10:06',
+				state: 'visto',
+				id: 7
 			}
 		]
 	},
@@ -211,10 +218,24 @@ const data = [
 			},
 			{
 				author: 'Furia',
-				content: 'Vayamos a romper el McDonals del Obelisco',
+				content: 'Queres que te pase a buscar?',
 				date: 'hoy a 12:03',
 				state: 'entregado',
-				id: 4
+				id: 5
+			},
+			{
+				author: 'Yo',
+				content: 'y que vamos a hacer?',
+				date: 'hoy a 12:04',
+				state: 'entregado',
+				id: 6
+			},
+			{
+				author: 'Furia',
+				content: 'Vayamos a romper el McDonals del Obelisco',
+				date: 'hoy a 12:05',
+				state: 'entregado',
+				id: 7
 			},
 		]
 	},
@@ -260,14 +281,21 @@ const data = [
 				content: 'o un te de tilo',
 				date: 'hoy a 14:03',
 				state: 'visto',
-				id: 4
+				id: 5
+			},
+			{
+				author: 'Yo',
+				content: 'o meditar, escuche que funciona',
+				date: 'hoy a 14:03',
+				state: 'visto',
+				id: 6
 			},
 			{
 				author: 'Temor',
 				content: 'Lo voy a intentar, gracias',
-				date: 'hoy a 14:02',
+				date: 'hoy a 14:04',
 				state: 'visto',
-				id: 5
+				id: 7
 			},
 		]
 	},
@@ -327,7 +355,7 @@ const data = [
 				content: 'Denada, si hay pizza con Anana, NO LA COMAS!!',
 				date: 'sabado a 14:05',
 				state: 'visto',
-				id: 6
+				id: 7
 			},
 		],
 	},
@@ -342,57 +370,57 @@ const data = [
 				chatHistory: [
 					{
 						author: 'Yo',
-						content: 'Estoy tan estresado que mi vida es un capítulo de una telenovela dramática.',
-						date: 'sabado a 14:00',
-						state: 'entregado',
+						content: 'Mi vida es un capítulo de una novela dramática.',
+						date: 'hoy a 07:00',
+						state: 'visto',
 						id: 1
 					},
 					{
 						author: 'Ansiedad',
 						content: '¿En qué episodio estás? ¿El de “Mi jefe odia a los gatos” o “La nevera se ha convertido en un agujero negro”?',
-						date: 'sabado a 14:01',
+						date: 'hoy a 07:01',
 						state: 'visto',
 						id: 2
 					},
 					{
 						author: 'Yo',
 						content: 'Definitivamente el de “Los problemas vienen en camiones”',
-						date: 'sabado a 14:02',
-						state: 'entregado',
+						date: 'hoy a 07:01',
+						state: 'visto',
 						id: 3
 					},
 					{
 						author: 'Ansiedad',
-						content: '¡Genial! Solo me falta hacer una entrada dramática, ¿Quieres un poco de confeti virtual?',
-						date: 'sabado a 14:03',
+						content: '¡Genial! Solo me falta hacer una entrada dramática',
+						date: 'hoy a 07:05',
 						state: 'visto',
 						id: 4
 					},
 					{
 						author: 'Yo',
-						content: '¡Sí, por favor! Aunque, no estoy seguro si eso ayudará con mi estrés o solo aumentará el desorden.',
-						date: 'sabado a 14:05',
-						state: 'entregado',
+						content: 'No estoy seguro si eso ayudará con mi estrés o solo aumentará el desorden.',
+						date: 'hoy a 07:06',
+						state: 'visto',
 						id: 5
 					},
 					{
 						author: 'Ansiedad',
-						content: 'Si el confeti virtual no sirve, siempre puedo ofrecerte un karaoke para desahogarte.',
-						date: 'sabado a 14:05',
+						content: 'Siempre puedo ofrecerte un karaoke para desahogarte.',
+						date: 'hoy a 07:06',
 						state: 'visto',
 						id: 6
 					},
 					{
 						author: 'Yo',
 						content: '¡Perfecto! Solo si prometes no grabarlo para la eternidad.',
-						date: 'sabado a 14:05',
-						state: 'entregado',
-						id: 6
+						date: 'hoy a 07:07',
+						state: 'visto',
+						id: 7
 					},
 					{
 						author: 'Ansiedad',
 						content: '¡Prometido!',
-						date: 'sabado a 14:05',
+						date: 'hoy a 07:07',
 						state: 'visto',
 						id: 6
 					}
@@ -409,52 +437,52 @@ const data = [
 				chatHistory: [
 					{
 						author: 'Verguenza',
-						content: '¡Hola! Soy tu vergüenza, y he venido a recordarte ese momento en el que bailaste en público como si nadie te estuviera viendo. 💃😳',
-						date: 'sabado a 14:00',
+						content: '¡Hola! te acordas cuando bailaste en público como si nadie te estuviera viendo. 💃😳',
+						date: 'hoy a 03:00',
 						state: 'visto',
 						id: 1
 					},
 					{
 						author: 'Yo',
-						content: '¡Eso fue hace años! ¿Por qué tienes que sacar el tema ahora?',
-						date: 'sabado a 14:01',
-						state: 'entregado',
+						content: '¿Por qué tienes que sacar el tema ahora?',
+						date: 'hoy a 03:01',
+						state: 'visto',
 						id: 2
 					},
 					{
 						author: 'Verguenza',
-						content: ' Porque es mi trabajo ser la reina de los recuerdos incómodos. ¡Y hoy estoy en modo “flashback”!',
-						date: 'sabado a 14:02',
+						content: ' Porque es mi trabajo recordarte los recuerdos incómodos. ¡Y hoy estoy en modo “flashback”!',
+						date: 'sabado a 03:02',
 						state: 'visto',
 						id: 3
 					},
 					{
 						author: 'Yo',
 						content: 'Estoy tratando de mantener mi dignidad intacta.',
-						date: 'sabado a 14:03',
-						state: 'entregado',
+						date: 'hoy a 03:03',
+						state: 'visto',
 						id: 4
 					},
 					{
 						author: 'Verguenza',
 						content: '¿Dignidad? ¡Eso es tan pasado de moda!',
-						date: 'sabado a 14:05',
+						date: 'hoy a 03:05',
 						state: 'visto',
 						id: 5
 					},
 					{
 						author: 'Yo',
-						content: 'Dale, ya entendí! Pero al menos no te presentes en mi próxima videollamada, ¿de acuerdo?',
-						date: 'sabado a 14:05',
-						state: 'entregado',
+						content: 'Pero al menos no estes en mi próxima videollamada',
+						date: 'hoy a 03:05',
+						state: 'visto',
 						id: 6
 					},
 					{
 						author: 'Verguenza',
 						content: 'No prometo nada! ',
-						date: 'sabado a 14:05',
+						date: 'hoy a 03:06',
 						state: 'visto',
-						id: 6
+						id: 7
 					}
 				]
 			},
@@ -470,42 +498,42 @@ const data = [
 					{
 						author: 'Yo',
 						content: '¡Estoy celoso del nuevo coche de mi amigo!',
-						date: 'sabado a 14:00',
-						state: 'entregado',
+						date: 'hoy a 15:00',
+						state: 'visto',
 						id: 1
 					},
 					{
 						author: 'Envidia',
-						content: ' ¡Hola! Soy la envidia, encantada de hacerte sentir como si tu coche fuera un carrito de supermercado.',
-						date: 'sabado a 14:01',
+						content: 'Encantada de hacerte sentir como si tu coche fuera un carrito de supermercado.',
+						date: 'hoy a 15:01',
 						state: 'visto',
 						id: 2
 					},
 					{
 						author: 'Yo',
 						content: '¡No es justo! ¿Qué hago para no sentirme así?',
-						date: 'sabado a 14:02',
-						state: 'entregado',
+						date: 'hoy a 15:02',
+						state: 'visto',
 						id: 3
 					},
 					{
 						author: 'Envidia',
 						content: '¿Qué tal si le pones unas ruedas nuevas y lo llamas "edición limitada"? ',
-						date: 'sabado a 14:03',
+						date: 'hoy a 15:03',
 						state: 'visto',
 						id: 4
 					},
 					{
 						author: 'Yo',
 						content: '¡Buena idea! Lo llamaré "Classic Deluxe". ¡Gracias, Envidia!',
-						date: 'sabado a 14:05',
-						state: 'entregado',
+						date: 'hoy a 15:04',
+						state: 'visto',
 						id: 5
 					},
 					{
 						author: 'Envidia',
 						content: 'Seguiré esperando mi próximo gran drama',
-						date: 'sabado a 14:05',
+						date: 'hoy a 15:06',
 						state: 'visto',
 						id: 6
 					},
@@ -523,51 +551,51 @@ const data = [
 					{
 						author: 'Aburrimiento',
 						content: '¿Preparado para una fiesta de sofá?',
-						date: 'sabado a 14:00',
+						date: 'hoy a 18:00',
 						state: 'visto',
 						id: 1
 					},
 					{
 						author: 'Yo',
 						content: '¡Oh, genial! ¿Qué plan tienes para hoy, aparte de hacerme sentir como un cactus en una sala de espera?',
-						date: 'sabado a 14:01',
-						state: 'entregado',
+						date: 'hoy a 18:00',
+						state: 'visto',
 						id: 2
 					},
 					{
 						author: 'Aburrimiento',
-						content: 'Pensaba en un maratón de mirar cómo el reloj avanza lentamente. ¡Es un deporte extremo!',
-						date: 'sabado a 14:02',
+						content: 'Pensaba en un maratón de mirar cómo el reloj avanza lentamente.',
+						date: 'hoy a 18:02',
 						state: 'visto',
 						id: 3
 					},
 					{
 						author: 'Yo',
 						content: '¿Dónde firmo para escapar de esta fiesta?',
-						date: 'sabado a 14:03',
-						state: 'entregado',
+						date: 'hoy a 18:03',
+						state: 'visto',
 						id: 4
 					},
 					{
 						author: 'Aburrimiento',
-						content: 'Tranquilo, puedes contar las telarañas en las esquinas. ¡Es una búsqueda del tesoro!',
-						date: 'sabado a 14:05',
+						content: 'Tranquilo, podes contar las telarañas en las esquinas. ¡Es una búsqueda del tesoro!',
+						date: 'hoy a 18:05',
 						state: 'visto',
 						id: 5
 					},
 					{
 						author: 'Yo',
-						content: '¡Genial! ¡Voy a buscar algo más divertido, como ver crecer la hierba!',
-						date: 'sabado a 14:05',
-						state: 'entregado',
+						content: 'Creo que prefiero ver crecer el pasto',
+						date: 'hoy a 18:05',
+						state: 'visto',
 						id: 6
 					},
 					{
 						author: 'Aburrimiento',
 						content: 'Me quedaré aquí en modo "inactividad máxima"',
-						date: 'sabado a 14:05',
+						date: 'hoy a 18:05',
 						state: 'visto',
-						id: 6
+						id: 7
 					}
 				]
 			}
