@@ -141,9 +141,6 @@ padding: 20px;
   .options span{
     display: none;
   }
-  .bottom-icon span {
-    display: none;
-  }
 }
 
 @media  (max-width: 2000px) {

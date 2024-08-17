@@ -344,7 +344,7 @@ const data = [
 						author: 'Yo',
 						content: 'Estoy tan estresado que mi vida es un capítulo de una telenovela dramática.',
 						date: 'sabado a 14:00',
-						state: 'visto',
+						state: 'entregado',
 						id: 1
 					},
 					{
@@ -358,7 +358,7 @@ const data = [
 						author: 'Yo',
 						content: 'Definitivamente el de “Los problemas vienen en camiones”',
 						date: 'sabado a 14:02',
-						state: 'visto',
+						state: 'entregado',
 						id: 3
 					},
 					{
@@ -372,7 +372,7 @@ const data = [
 						author: 'Yo',
 						content: '¡Sí, por favor! Aunque, no estoy seguro si eso ayudará con mi estrés o solo aumentará el desorden.',
 						date: 'sabado a 14:05',
-						state: 'visto',
+						state: 'entregado',
 						id: 5
 					},
 					{
@@ -386,7 +386,7 @@ const data = [
 						author: 'Yo',
 						content: '¡Perfecto! Solo si prometes no grabarlo para la eternidad.',
 						date: 'sabado a 14:05',
-						state: 'visto',
+						state: 'entregado',
 						id: 6
 					},
 					{
@@ -418,7 +418,7 @@ const data = [
 						author: 'Yo',
 						content: '¡Eso fue hace años! ¿Por qué tienes que sacar el tema ahora?',
 						date: 'sabado a 14:01',
-						state: 'visto',
+						state: 'entregado',
 						id: 2
 					},
 					{
@@ -432,7 +432,7 @@ const data = [
 						author: 'Yo',
 						content: 'Estoy tratando de mantener mi dignidad intacta.',
 						date: 'sabado a 14:03',
-						state: 'visto',
+						state: 'entregado',
 						id: 4
 					},
 					{
@@ -446,7 +446,7 @@ const data = [
 						author: 'Yo',
 						content: 'Dale, ya entendí! Pero al menos no te presentes en mi próxima videollamada, ¿de acuerdo?',
 						date: 'sabado a 14:05',
-						state: 'visto',
+						state: 'entregado',
 						id: 6
 					},
 					{
@@ -471,7 +471,7 @@ const data = [
 						author: 'Yo',
 						content: '¡Estoy celoso del nuevo coche de mi amigo!',
 						date: 'sabado a 14:00',
-						state: 'visto',
+						state: 'entregado',
 						id: 1
 					},
 					{
@@ -485,7 +485,7 @@ const data = [
 						author: 'Yo',
 						content: '¡No es justo! ¿Qué hago para no sentirme así?',
 						date: 'sabado a 14:02',
-						state: 'visto',
+						state: 'entregado',
 						id: 3
 					},
 					{
@@ -499,7 +499,7 @@ const data = [
 						author: 'Yo',
 						content: '¡Buena idea! Lo llamaré "Classic Deluxe". ¡Gracias, Envidia!',
 						date: 'sabado a 14:05',
-						state: 'visto',
+						state: 'entregado',
 						id: 5
 					},
 					{
@@ -531,7 +531,7 @@ const data = [
 						author: 'Yo',
 						content: '¡Oh, genial! ¿Qué plan tienes para hoy, aparte de hacerme sentir como un cactus en una sala de espera?',
 						date: 'sabado a 14:01',
-						state: 'visto',
+						state: 'entregado',
 						id: 2
 					},
 					{
@@ -545,7 +545,7 @@ const data = [
 						author: 'Yo',
 						content: '¿Dónde firmo para escapar de esta fiesta?',
 						date: 'sabado a 14:03',
-						state: 'visto',
+						state: 'entregado',
 						id: 4
 					},
 					{
@@ -559,7 +559,7 @@ const data = [
 						author: 'Yo',
 						content: '¡Genial! ¡Voy a buscar algo más divertido, como ver crecer la hierba!',
 						date: 'sabado a 14:05',
-						state: 'visto',
+						state: 'entregado',
 						id: 6
 					},
 					{
