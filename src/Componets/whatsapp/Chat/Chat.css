@@ -87,12 +87,14 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 10px;
 }
 
 .form i {
     margin-left: 10px;
     color: white;
     align-content: center;
+    
 }
 
 .input {

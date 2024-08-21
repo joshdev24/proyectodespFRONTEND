@@ -91,7 +91,7 @@ const data = [
 			},
 			{
 				author: 'Alegria',
-				content: 'Entiendo. ¿Qué tal si te tomas un descanso para hacer algo que disfrutes?',
+				content: '¿Qué tal si te tomas un descanso para hacer algo que disfrutes?',
 				date: 'Hoy a 07:37',
 				state: 'visto',
 				id: 4
@@ -105,7 +105,7 @@ const data = [
 			},
 			{   
 				author: 'Alegria',
-				content: ' Intenta encontrar un momento para eso, puede ayudarte a relajarte.',
+				content: 'Intenta encontrar un momento, puede ayudar',
 				date: 'Hoy a 07:38',
 				state: 'visto',
 				id:6
@@ -144,7 +144,7 @@ const data = [
 			},
 			{
 				author: 'Tristeza',
-				content: 'Me siento bastante triste hoy. No han salido bien algunas cosas que esperaba..',
+				content: 'No han salido bien algunas cosas que esperaba..',
 				date: 'hoy a 10:02',
 				state: 'visto',
 				id: 3
