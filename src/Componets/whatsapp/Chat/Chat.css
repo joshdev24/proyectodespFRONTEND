@@ -38,6 +38,7 @@ body {
     padding: 10px;
     font-size: 14px;
     font-family : 'Lato', sans-serif;
+    width: fit-content;
 }
 
 .author {
@@ -65,6 +66,8 @@ body {
 .footer {
     font-size: x-small;
     color: rgb(41, 40, 40);
+    display: flex;
+    justify-content: flex-end;
 }
 
 .footer span {
@@ -99,7 +102,7 @@ body {
     padding: 9px;
     margin-right: 10px;
     outline: none;
-    color: #8696a0;
+    color: #02131d;
 }
 
 button {
@@ -124,3 +127,9 @@ button {
     align-content: center;
 }
 
+@media (min-width: 2000px){
+    .chat-container {
+        font-size: large;
+    }
+
+}

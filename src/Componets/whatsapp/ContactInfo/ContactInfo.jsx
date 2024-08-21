@@ -8,6 +8,8 @@ const ContactInfo = () => {
   const params = useParams();
 
   const contactData = getContactInfoById(params.id_contacto);
+  const Color = contactData.color
+  const Back = contactData.backgroundColor
 
 
   return (
@@ -27,15 +29,17 @@ const ContactInfo = () => {
         <div className="status">
           <span><i> {contactData.status} </i></span>
         </div>
-        <div className="bottom-icon" style={{ backgroundColor: contactData.backgroundColor }} >
-          <button style={{ backgroundColor: contactData.color }}><i class="bi bi-star">   <span> Mensajes Destacados </span>  </i></button>
-          <button style={{ backgroundColor: contactData.color }}><i class="bi bi-bell">          <span> Silenciar Notificaciones</span>     </i></button>
-          <button style={{ backgroundColor: contactData.color }}><i class="bi bi-clock-history"></i> <span> Mensajes temporales</span> </button>
+        <div className="bottom-icon" style={{ backgroundColor:  Back }} >
+          <button style={{ backgroundColor: Color }}><i class="bi bi-star">   <span> Mensajes Destacados </span>  </i></button>
+          <button style={{ backgroundColor: Color }}><i class="bi bi-bell">          <span> Silenciar Notificaciones</span></i></button>
+          <button style={{ backgroundColor: Color }}><i class="bi bi-clock-history"></i> <span> Mensajes guardados </span> </button>
 
         </div>
         <div className="options" > 
-          <button style={{ backgroundColor: contactData.backgroundColor }} > <i class="bi bi-ban"></i> <span> Bloquear Contacto</span></button>
-        <button style={{ backgroundColor: contactData.backgroundColor }}> <i class="bi bi-recycle"></i> <span>Vaciar Chat </span></button>
+          <button style={{ backgroundColor: Back }} > <i class="bi bi-ban"></i> <span> Bloquear Contacto</span></button>
+        <button style={{ backgroundColor: Back }}> <i class="bi bi-recycle"></i> <span> Vaciar Chat </span></button>
+        <button style={{ backgroundColor:  Back }}> <i class="bi bi-flag"></i> <span> Reportar Usuario</span></button>
+        <button style={{ backgroundColor:  Back }}> <i class="bi bi-star"></i> <span> Añadir a Favoritos </span></button>
         </div>
       </div>
     </div>

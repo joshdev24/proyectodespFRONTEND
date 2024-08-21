@@ -3,9 +3,10 @@ import data from "../../../data.js";
 import Contact from "../Contact/Contact.jsx";
 import './ContactList.css';
 const ContactList = ( ) => {
-  const categoriasDisponibles = ['TODAS', 'PUBERTAD'];
-  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('TODAS');
+  const categoriasDisponibles = ['NIÑEZ', 'PUBERTAD'];
+  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('NIÑEZ');
   const [emocionesState, setEmocionesState] = useState(data);
+  
 
   const handleChangeCategoria = (nuevoValor) => {
     setCategoriaSeleccionada(nuevoValor);
@@ -18,6 +19,7 @@ const ContactList = ( ) => {
       setEmocionesState(data.filter(contact => contact.categoria === categoriaSeleccionada));
     }
   }, [categoriaSeleccionada, data]);
+  
 
   return (
     <div className="contact-list-container">
@@ -45,9 +47,9 @@ const ContactList = ( ) => {
       </div>
 
       <div className="btm-cont">
-        <i className="bi bi-telephone"></i>
-        <i className="bi bi-chat-fill"></i>
-        <i className="bi bi-gear-wide-connected"></i>
+        <i className="bi bi-telephone">  Llamadas </i>
+        <i className="bi bi-chat-fill">  Chats </i>
+        <i className="bi bi-gear-wide-connected">  Configuración </i>
       </div>
 
 

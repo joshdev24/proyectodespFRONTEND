@@ -6,13 +6,15 @@ import "./Header.css";
 
 const Header = ({ contactData, backURL }) => {
     const navigate = useNavigate();
+    const Color = contactData.color
 
     function handleClick() {
         navigate(`/info/${contactData.id}`);
     }
+    
 
     return (
-        <div className="header " style={{ backgroundColor: contactData.color }}>
+        <div className="header " style={{ backgroundColor: Color }}>
             <div className="left">
                 {contactData.id && (
                     <Link to={backURL || "/"}><i className="bi bi-arrow-left-circle"></i></Link>)}

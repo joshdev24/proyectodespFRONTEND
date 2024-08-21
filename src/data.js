@@ -6,7 +6,7 @@ const data = [
 		backgroundColor: "#FF7777",
 		status: "Viva la pizza con anana y queso",
 		color: "#FFAAAA",
-		categoria: "TODAS",
+		categoria: "NIÑEZ",
 		chatHistory: [
 			{
 				author: 'Yo',
@@ -66,7 +66,7 @@ const data = [
 		backgroundColor: "#f0d78a",
 		status: "¡Hoy es un gran día para sonreír y ser feliz! 😊🌟",
 		color: "#e7e8b4",
-		categoria: "TODAS",
+		categoria: "NIÑEZ",
 		chatHistory: [
 			{
 				author: 'Yo',
@@ -126,7 +126,7 @@ const data = [
 		backgroundColor: "#6482AD",
 		status: "A veces, las nubes en el cielo también tienen su lugar. 🌧️",
 		color: "#5e729d",
-		categoria: "TODAS",
+		categoria: "NIÑEZ",
 		chatHistory: [
 			{
 				author: 'Tristeza',
@@ -183,10 +183,10 @@ const data = [
 		id: 4,
 		name: "Furia",
 		profilePicture: "furia.jpg",
-		backgroundColor: "#C40C0C",
+		backgroundColor: "#B43F3F",
 		status: "Estoy tan enojado que hasta mi café está temblando. 😱",
 		color: "#BB6464",
-		categoria: "TODAS",
+		categoria: "NIÑEZ",
 		chatHistory: [
 			{
 				author: 'Furia',
@@ -220,7 +220,7 @@ const data = [
 				author: 'Furia',
 				content: 'Queres que te pase a buscar?',
 				date: 'hoy a 12:03',
-				state: 'entregado',
+				state: 'visto',
 				id: 5
 			},
 			{
@@ -246,7 +246,7 @@ const data = [
 		backgroundColor: "#987D9A",
 		status: "Si ves a alguien huyendo sin motivo, soy yo. 🏃‍♂️😅",
 		color: "#b69cc3",
-		categoria: "TODAS",
+		categoria: "NIÑEZ",
 		chatHistory: [
 			{
 				author: 'Temor',
@@ -306,7 +306,7 @@ const data = [
 		backgroundColor: "#6C946F",
 		status: "Mi cara cuando alguien menciona pizza con anana: 😒🍕",
 		color: "#d5f1c6",
-		categoria:"TODAS",
+		categoria:"NIÑEZ",
 		chatHistory: [
 			{
 				author: 'Desagrado',
