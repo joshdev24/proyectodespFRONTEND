@@ -1,5 +1,4 @@
 
-
 .contact-list-container {
     border: 1px solid rgb(51, 109, 51);
     border-radius: 10px;
@@ -58,7 +57,7 @@
     justify-content: space-around;
     border-radius: 10px 10px 0 0;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-    height: 90px;
+    height: 160px;
 }
 
 .btm-cont i{
