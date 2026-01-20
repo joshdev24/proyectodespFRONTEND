@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Contacts from "./Pages/Contact/Contact";
 import Chat from "./Pages/Chat/Chat";
-import ContactInfo from "./Pages/ContactInfo/ContactInfo"; // Ensure correct import
+import ContactInfo from "./Pages/ContactInfo/ContactInfo";
 
 function App() {
   return (

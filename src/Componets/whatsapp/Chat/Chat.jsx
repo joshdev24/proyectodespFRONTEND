@@ -1,26 +1,30 @@
-import { React, useState, useRef, } from "react";
-import "./Chat.css"
-import Header from "../Header/Header.jsx";
-
+import React, { useState, useRef, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Send, Plus, Camera, Mic, ArrowLeft } from "lucide-react";
+import { Link } from "react-router-dom";
+import "./Chat.css";
 
 const Chat = ({ data }) => {
     const [message, setMessage] = useState("");
     const [contactData, setContactData] = useState(data);
-    const inputRef = useRef();
-    const lastMessageRef = useRef();
+    const bottomRef = useRef(null);
 
-    const Color = contactData.color
-    const Back = contactData.backgroundColor
+    const emotionColor = contactData.backgroundColor;
+    const secondaryColor = contactData.color;
+
+    useEffect(() => {
+        // Scroll to bottom on new message
+        bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    }, [contactData.chatHistory]);
 
     function handleSubmit(e) {
         e.preventDefault();
-
-        if (!message) return;
+        if (!message.trim()) return;
 
         const newMessage = {
             author: "Yo",
             content: message,
-            date: "ahora",
+            date: "Ahora",
             state: "visto",
             id: crypto.randomUUID(),
         };
@@ -32,56 +36,92 @@ const Chat = ({ data }) => {
         setMessage("");
     }
 
-    function handleMessageChanged(e) {
-        setMessage(e.target.value);
-    }
     return (
-        <div className="container">
-<div className="chat" style={{ backgroundColor: Back }}>
-            <Header contactData={contactData} />
-            <div>
-                <div className="day" style={{ backgroundColor: contactData.color }}>
-                    <span> {contactData.chatHistory[0].date} </span></div>
-                {contactData.chatHistory.map(({ id, author, content, date, state }) => (
-                    <div
-                        className={`row ${author === "Yo" ? "sent" : "received"}`}
-                        key={id}
-                        ref={lastMessageRef}
-                    >
-                        <div className="chat-container" style={{ backgroundColor: Color }}>
-                            <div className="author">{author}</div>
-                            <div className="content">{content}</div>
-                            <div className="footer">{date}<span className={state === "visto" && "blue"}>&#10003;&#10003;</span></div>
+        <div className="chat-layout">
+            <motion.div
+                className="chat-interface glass-panel"
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4 }}
+                style={{ "--theme-color": emotionColor }}
+            >
+                {/* Header */}
+                <div className="chat-header" style={{ borderBottomColor: "var(--glass-border)" }}>
+                    <Link to="/" className="back-button">
+                        <ArrowLeft size={24} color="var(--text-primary)" />
+                    </Link>
+                    <Link to={`/info/${contactData.id}`} className="header-profile" style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <div className="header-avatar-ring" style={{ borderColor: emotionColor }}>
+                            <img src={`/images/${contactData.profilePicture}`} alt={contactData.name} />
                         </div>
+                        <div className="header-info">
+                            <h2>{contactData.name}</h2>
+                            <p className="status-text">{contactData.categoria || "Conectado"}</p>
+                        </div>
+                    </Link>
+                </div>
+
+                {/* Messages Area */}
+                <div
+                    className="messages-area"
+                >
+                    <div className="date-divider">
+                        <span>Hoy</span>
                     </div>
 
-                ))}
-            </div>
-            <div className="form-container" style={{ backgroundColor: Back }}>
-                <form className="form" onSubmit={(e) => handleSubmit(e, message)}>
-                    <i className="bi bi-plus-lg"></i>
-                    <input
-                        className="input"
-                        type="text"
-                        onChange={handleMessageChanged}
-                        value={message}
-                        ref={inputRef}
-                        placeholder=""
-                        style={{ backgroundColor: Color }}
-                    />
-                    <button type="submit" style={{ backgroundColor: Back}} > <i class="bi bi-send-fill"></i></button>
-                    <div className="bottom-icons">
-                        <i className="bi bi-camera"></i>
-                        <i className="bi bi-mic"></i>
+                    <AnimatePresence>
+                        {contactData.chatHistory.map(({ id, author, content, date, state }) => {
+                            const isMe = author === "Yo";
+                            return (
+                                <motion.div
+                                    key={id}
+                                    initial={{ opacity: 0, y: 10, scale: 0.9 }}
+                                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                                    className={`message-row ${isMe ? "sent" : "received"}`}
+                                >
+                                    <div
+                                        className="message-bubble"
+                                    >
+                                        <p>{content}</p>
+                                        <div className="message-meta">
+                                            <span>{date}</span>
+                                            {isMe && <span className="checks">✓✓</span>}
+                                        </div>
+                                    </div>
+                                </motion.div>
+                            );
+                        })}
+                    </AnimatePresence>
+                    <div ref={bottomRef} />
+                </div>
+
+                {/* Input Area */}
+                <form className="input-area glass-panel" onSubmit={handleSubmit}>
+                    <button type="button" className="action-btn">
+                        <Plus size={20} />
+                    </button>
+                    <div className="input-wrapper">
+                        <input
+                            type="text"
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
+                            placeholder="Escribe un pensamiento..."
+                        />
                     </div>
+                    {message ? (
+                        <button type="submit" className="send-btn" style={{ backgroundColor: emotionColor }}>
+                            <Send size={18} color="#fff" />
+                        </button>
+                    ) : (
+                        <div className="secondary-actions">
+                            <button type="button" className="action-btn"><Camera size={20} /></button>
+                            <button type="button" className="action-btn"><Mic size={20} /></button>
+                        </div>
+                    )}
                 </form>
-            </div>
+            </motion.div>
         </div>
-
-        </div>
-        
     );
 };
 
-export default Chat
-
+export default Chat;

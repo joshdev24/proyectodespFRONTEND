@@ -1,0 +1,138 @@
+:root {
+    /* Palette - Bright Headquarters */
+    /* Replaced dark deep space with a brighter, dreamy palette */
+    --bg-deep: #2e1065;
+    /* Deep purple anchor, but we will use gradients */
+    --bg-surface: rgba(255, 255, 255, 0.15);
+
+    /* Glassmorphism Tokens - Lighter & Frosted */
+    --glass-bg: rgba(255, 255, 255, 0.2);
+    --glass-bg-hover: rgba(255, 255, 255, 0.35);
+    --glass-border: rgba(255, 255, 255, 0.4);
+    --glass-shimmer: rgba(255, 255, 255, 0.2);
+
+    /* Text - Optimizing for lighter/colorful backgrounds */
+    --text-primary: #ffffff;
+    --text-secondary: #e2e8f0;
+    --text-muted: #cbd5e1;
+
+    /* Emotion Colors (Vibrant) */
+    --joy: #fbbf24;
+    --sadness: #60a5fa;
+    --anger: #f87171;
+    --fear: #c084fc;
+    --disgust: #a3e635;
+    --anxiety: #fb923c;
+    --envy: #2dd4bf;
+    --ennui: #94a3b8;
+    --embarrassment: #f472b6;
+}
+
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    background-color: #2e1065;
+    /* Living Gradient Background */
+    background-image:
+        radial-gradient(at 0% 0%, rgba(251, 191, 36, 0.45) 0px, transparent 50%),
+        /* Joy (Yellow) */
+        radial-gradient(at 100% 0%, rgba(248, 113, 113, 0.45) 0px, transparent 50%),
+        /* Anger (Red) */
+        radial-gradient(at 100% 100%, rgba(96, 165, 250, 0.45) 0px, transparent 50%),
+        /* Sadness (Blue) */
+        radial-gradient(at 0% 100%, rgba(163, 230, 53, 0.4) 0px, transparent 50%),
+        /* Disgust (Green) */
+        radial-gradient(at 50% 50%, rgba(192, 132, 252, 0.4) 0px, transparent 50%);
+    /* Fear (Purple) */
+    background-size: 200% 200%;
+    animation: breathe 20s ease-in-out infinite alternate;
+    background-attachment: fixed;
+}
+
+/* Film Grain Overlay */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+@keyframes breathe {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Utilities */
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid var(--glass-border);
+    box-shadow:
+        0 8px 32px 0 rgba(31, 38, 135, 0.15),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(135deg, #fff 30%, #f0f9ff 100%);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
